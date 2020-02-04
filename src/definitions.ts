@@ -6,4 +6,5 @@ declare module "@capacitor/core" {
 
 export interface KeyguardManagerPlugin {
   echo(options: { value: string }): Promise<{value: string}>;
+  isDeviceSecure(): Promise<{value: boolean}>;
 }

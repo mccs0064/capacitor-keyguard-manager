@@ -9,4 +9,7 @@ export interface KeyguardManagerPlugin {
     }): Promise<{
         value: string;
     }>;
+    isDeviceSecure(): Promise<{
+        value: boolean;
+    }>;
 }

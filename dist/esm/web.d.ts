@@ -7,6 +7,9 @@ export declare class KeyguardManagerWeb extends WebPlugin implements KeyguardMan
     }): Promise<{
         value: string;
     }>;
+    isDeviceSecure(): Promise<{
+        value: boolean;
+    }>;
 }
 declare const KeyguardManager: KeyguardManagerWeb;
 export { KeyguardManager };

@@ -21,6 +21,11 @@ export class KeyguardManagerWeb extends WebPlugin {
             return options;
         });
     }
+    isDeviceSecure() {
+        return __awaiter(this, void 0, void 0, function* () {
+            throw new Error('No web implementation');
+        });
+    }
 }
 const KeyguardManager = new KeyguardManagerWeb();
 export { KeyguardManager };

@@ -13,6 +13,10 @@ export class KeyguardManagerWeb extends WebPlugin implements KeyguardManagerPlug
     console.log('ECHO', options);
     return options;
   }
+
+  async isDeviceSecure(): Promise<{value: boolean}> {
+    throw new Error('No web implementation')
+  }
 }
 
 const KeyguardManager = new KeyguardManagerWeb();
