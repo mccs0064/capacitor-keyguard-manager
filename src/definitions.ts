@@ -1,10 +1,9 @@
-declare module "@capacitor/core" {
+declare global {
   interface PluginRegistry {
-    KeyguardManager: KeyguardManagerPlugin;
+    KeyguardManagerPlugin: KeyguardManagerPlugin;
   }
 }
 
 export interface KeyguardManagerPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
   isDeviceSecure(): Promise<{value: boolean}>;
 }
